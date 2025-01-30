@@ -17,10 +17,10 @@ const App = () => {
 
   requestAnimationFrame(raf);
   return (
-    <div className="w-full h-[400vh]   relative overflow-x-hidden z-100">
+    <div className="w-full h-[400vh] relative overflow-x-hidden z-100">
       <Loader />
       <MainCircle />
-      <div className="w-full  relative">
+      <div className="w-full relative">
         <Navbar />
         <Header />
         <Page2 />

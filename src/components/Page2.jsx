@@ -37,7 +37,7 @@ const Page2 = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="w-full h-screen main-container relative px-10">
+    <div ref={containerRef} className="w-full h-screen bg-[#F9F9F9] rounded-[25px] main-container relative rounded-[40px  ] p-10 ">
       <div className="w-full h-20 flex justify-between items-center">
         <h1 className="text-[2rem] font-semibold leading-[1.2]">
           Your key to strategic <br /> success through analytics
@@ -58,7 +58,7 @@ const Page2 = () => {
         ></div>
       </div>
       <div className="w-full absolute bottom-[-10%] flex items-center  justify-center  gap-5 ">
-        <div>
+        <div  className="flex items-center justify-center gap-2">
           Up to
           <span className="text-[9rem] font-bold"> 45%</span>
         </div>
@@ -67,7 +67,6 @@ const Page2 = () => {
           provide insights from data, reduce time for analysis and save time for <br />
           making important, informed decisions
         </div>
-        <div></div>
       </div>
     </div>
   );
