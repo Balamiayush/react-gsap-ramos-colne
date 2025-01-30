@@ -17,14 +17,14 @@ const Navbar = () => {
           width: targetRect.width,
           x: targetRect.left - menuRect.left,
           opacity: 1,
-          duration: 0.15,
-          ease: "power3.out",
+        duration: 0.3,
+        ease:"power2.out"
         });
       });
     });
 
     menuRef.current.addEventListener("mouseleave", () => {
-      gsap.to(hoverRef.current, { opacity: 0, duration: 0.15 });
+      gsap.to(hoverRef.current, { opacity: 0, duration: 0.3,ease:"power2.out" });
     });
   }, []);
 
@@ -34,11 +34,11 @@ const Navbar = () => {
         <h1 className="text-white text-[1.4rem] font-bold">ramos.</h1>
         <div
           ref={menuRef}
-          className="relative  w-[40%] glassdiv rounded-[15px] h-[7.5vh] p-5 flex justify-between items-center text-sm text-white cursor-pointer"
+          className="relative   w-[40%] glassdiv  h-[7.5vh]   flex justify-between items-center text-sm text-white cursor-pointer"
         >
           <span
             ref={hoverRef}
-            className="absolute left-0 top-0 h-full bg-white/20 rounded-[15px] transition-all duration-150"
+            className="absolute left-0 top-0 px-5  h-full bg-white/20 rounded-lg transition-all duration-150"
             style={{ width: 0, opacity: 0 }}
           ></span>
           <a

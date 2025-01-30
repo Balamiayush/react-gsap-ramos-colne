@@ -40,7 +40,7 @@ const Loader = () => {
   }, []);
 
   return (
-    <div className="w-full  z-50 overflow-hidden loader h-screen flex absolute ">
+    <div className="w-full  z-50 overflow-hidden loader h-screen flex fixed top-0 left-0 ">
       {boxes.map((_, index) => (
         <div key={index} className="box w-[20%] h-full bg-orange-600"></div>
       ))}

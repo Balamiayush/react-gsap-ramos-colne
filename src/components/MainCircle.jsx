@@ -14,6 +14,7 @@ const MainCircle = () => {
         duration: 0.5,
         ease: "power2.out",
         overwrite: true,
+        ease: "bounce.out",
       });
     });
   });
@@ -63,18 +64,15 @@ const MainCircle = () => {
 
       window.requestAnimationFrame(tick);
     };
-
     window.addEventListener("mousemove", handleMouseMove);
     tick();
-
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
-
   return (
     <div
-      className="circle p-2 rounded-full bg-orange-500 absolute"
+      className="circle p-2 rounded-full bg-orange-500 absolute z-1000"
       ref={circleRef}
     ></div>
   );
