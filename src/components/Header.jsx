@@ -43,9 +43,17 @@ const Header = () => {
         end: "100% 50%",
         scrub: 1,
         duration: 0.5,
-    
+        // markers: true,
       },
     });
+    gsap.to(".analytics",{
+      opacity: 1,
+      duration: 3,
+      rotate: 360,
+      
+    })
+
+
   }, []);
 
   return (
@@ -56,7 +64,7 @@ const Header = () => {
             <div className="circle w-[10vw] h-[10vw] bg-orange-500 rounded-full"></div>
             <div className="circle w-[10vw] h-[10vw] bg-green-500 rounded-full"></div>
           </div>
-          <span className="analytics">Analytics</span>
+          <span className="analytics opacity-0">Analytics</span>
           <div className="video w-full h-[15vw] rounded-[15px] mt-[-10vw]">
             <video
               className="w-full h-full object-cover rounded-[15px]"

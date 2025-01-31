@@ -63,13 +63,16 @@ useGSAP(() => {
     ease: "power2.inOut",
     scrollTrigger: {
       trigger: ".page3",
-      start: "top 30%",
+      start: "top 60%",
       end: "bottom bottom",
+      scrub: 1,
+      duration: 0.5,
+      // markers: true,
     },
   });
 });
   return (
-    <div className="w-full page3  h-screen flex flex-col justify-center items-center font-semibold p-10 gap-10 ">
+    <div className="w-full page3 relative  h-screen flex flex-col justify-center items-center font-semibold p-10 gap-10 ">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}

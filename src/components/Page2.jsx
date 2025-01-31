@@ -32,12 +32,13 @@ const Page2 = () => {
         end: "20%",
         scrub: true,
         duration: 0.5,
+        
       },
     });
   }, []);
 
   return (
-    <div ref={containerRef} className="w-full h-screen bg-[#F9F9F9] rounded-[25px] main-container relative rounded-[40px  ] p-10 ">
+    <div ref={containerRef} className="w-full h-screen  bg-[#F9F9F9] rounded-[25px] main-container relative rounded-[40px  ] p-10 ">
       <div className="w-full h-20 flex justify-between items-center">
         <h1 className="text-[2rem] font-semibold leading-[1.2]">
           Your key to strategic <br /> success through analytics
