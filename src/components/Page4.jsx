@@ -18,8 +18,7 @@ const Page4 = () => {
         start: "top top", // When the section enters
         end: "bottom center", // Ends when near the center
         scrub: 1, // Smooth transition
-        markers: true, // Debug markers (remove in production)
-        pin: true, // Keeps it fixed during the animation
+                pin: true, // Keeps it fixed during the animation
       },
     });
 
