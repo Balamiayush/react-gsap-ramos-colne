@@ -14,7 +14,6 @@ const MainCircle = () => {
         duration: 0.5,
         ease: "power2.out",
         overwrite: true,
-        ease: "bounce.out",
       });
     });
   });
@@ -72,7 +71,7 @@ const MainCircle = () => {
   }, []);
   return (
     <div
-      className="circle p-2 rounded-full bg-orange-500 absolute z-1000"
+      className="circle p-2 rounded-full bg-orange-500 absolute z-[1000]"
       ref={circleRef}
     ></div>
   );
